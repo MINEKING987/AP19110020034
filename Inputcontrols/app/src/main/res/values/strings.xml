@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Input controls</string>
+    <string-array name="dist">
+        <item>Chittor</item>
+        <item>Guntur</item>
+        <item>Kadapa</item>
+        <item>Nellore</item>
+    </string-array>
+    <string-array name="ChittorMandal">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+    <string-array name="GunturMandal">
+        <item>AA</item>
+        <item>BB</item>
+        <item>CC</item>
+        <item>DD</item>
+    </string-array>
+</resources>
