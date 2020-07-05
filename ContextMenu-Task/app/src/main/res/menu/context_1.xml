@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Notification"
+          android:id="@+id/notif"
+        />
+    <item android:title="Help"
+          android:id="@+id/help"
+        />
+    <item android:title="Setting"
+          android:id="@+id/sets"
+        />
+    <item android:title="Logout"
+          android:id="@+id/logout"
+        />
+</menu>
