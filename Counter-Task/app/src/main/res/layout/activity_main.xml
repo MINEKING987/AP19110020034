@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.99"
+        android:background="#D8DDA4"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#14338E"
+        android:textSize="100sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D8DDA4"
+        android:orientation="horizontal"
+        android:layout_weight="0.03"
+        >
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:text="+"
+            android:background="#2690C1"
+            android:textSize="20sp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:onClick="add"
+        />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:background="#374E59"
+            android:text="-"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:onClick="sub"
+        />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:background="#2690C1"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textSize="20sp"
+            android:onClick="res"
+        />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FF374E59"
+            android:layout_weight="0.25"
+            android:text="Toast"
+            android:textSize="20sp"
+            android:onClick="Tos"
+        />
+    </LinearLayout>
+</LinearLayout>
