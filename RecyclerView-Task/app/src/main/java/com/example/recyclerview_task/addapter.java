@@ -12,13 +12,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class addapter extends RecyclerView.Adapter {
     int img[];
-    String nam[];
+    String api[], nam[],ver[],rel[];
     Context ct;
     ImageView imgs;
-    TextView txt;
-    public addapter(MainActivity mainActivity, String[] names, int[] imgs) {
+    TextView CN,V,Ap,rele;
+    public addapter(MainActivity mainActivity, String[] names, int[] imgs, String[] version, String[] apilvl, String[] release) {
         img = imgs;
         nam = names;
+        rel = release;
+        ver = version;
+        api = apilvl;
         ct = mainActivity;
     }
 
@@ -34,23 +37,29 @@ public class addapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         imgs.setImageResource(img[position]);
-        txt.setText(nam[position]);
-    }
-
-    @Override
-    public int getItemCount() {
-        return img.length;
+        CN.setText(nam[position]);
+        V.setText(ver[position]);
+        Ap.setText(api[position]);
+        rele.setText(rel[position]);
     }
     @Override
     public int getItemViewType(int position) {
         return position;
     }
 
+    @Override
+    public int getItemCount() {
+        return img.length;
+    }
+
     private class ViewHolder extends RecyclerView.ViewHolder {
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imgs = itemView.findViewById(R.id.imgv);
-            txt = itemView.findViewById(R.id.textv);
+            CN = itemView.findViewById(R.id.textv);
+            V = itemView.findViewById(R.id.textvb);
+            Ap = itemView.findViewById(R.id.textvc);
+            rele = itemView.findViewById(R.id.textvd);
         }
     }
 }
